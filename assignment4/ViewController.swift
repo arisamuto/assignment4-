@@ -9,12 +9,23 @@
 import UIKit
 
 class ViewController: UIViewController {
+    
+    @IBOutlet var label: UILabel!
+    @IBOutlet var typednumber1: UITextField!
+    @IBOutlet var typednumber2: UITextField!
+
 
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        
+        self.typednumber1.keyboardType = UIKeyboardType.numberPad
+        self.typednumber2.keyboardType = UIKeyboardType.numberPad
     }
-
-
+    @IBAction func calculate(_sender: UIButton){
+    
+        
+        
+    }
 }
 
