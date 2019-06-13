@@ -27,18 +27,18 @@ class ViewController: UIViewController {
     }
     @IBAction func calclate() {
         if typednumber1.text != "" && typednumber2.text != ""{
-            number1 = Int(typednumber1.text!)
-            number2 = Int(typednumber2.text!)
-            result = number1 + number2
+            let answer = calculation()
+            label.text = String(answer)
         }
-        func calculation() -> Int{
-            return Int(result)
-        }
-        label.text = String(result)
+    }
+    func calculation() -> Int{
+        number1 = Int(typednumber1.text!)
+        number2 = Int(typednumber2.text!)
+        result = number1 + number2
+        return Int(result)
     }
     
     override func touchesBegan(_ touches: Set<UITouch>, with event: UIEvent?) {
         self.view.endEditing(true)
     }
 }
-
