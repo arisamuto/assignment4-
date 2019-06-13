@@ -44,7 +44,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="計算"/>
                                 <connections>
-                                    <action selector="equal:" destination="BYZ-38-t0r" eventType="touchUpInside" id="C4R-P5-gAi"/>
+                                    <action selector="calclate" destination="BYZ-38-t0r" eventType="touchUpInside" id="dbf-3X-OK1"/>
                                 </connections>
                             </button>
                         </subviews>
